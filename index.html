@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn maths with Aaryan. Explore short lessons, worked examples and interactive practice for ages 10–15, from Year 6 to early GCSE.">
+  <meta name="theme-color" content="#211127">
+  <title>Fast &amp; Fluent with Aaryan | Maths practice for ages 10–15</title>
+  <link rel="icon" href="assets/bolt.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#topics">Skip to topics</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><img src="assets/fast-and-fluent.webp" alt="Fast and Fluent with Aaryan" width="320" height="141"></a>
+      <nav aria-label="Main navigation">
+        <a href="#topics">Topics</a>
+        <a href="#challenge">Quick challenge</a>
+      </nav>
+      <button class="progress-button" type="button" id="progress-button"><span aria-hidden="true">✦</span> <span id="progress-count">0</span><span class="progress-label"> lessons cleared</span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="headline">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal"></span> THE MATHS CLUB FOR AGES 10–15</p>
+          <h1 id="headline">Make maths<br><em>click.</em></h1>
+          <p class="intro">Crack tricky topics with Aaryan. See how it’s done, have a go, and build the confidence to figure it out yourself.</p>
+          <div class="hero-actions">
+            <a class="button lime" href="#topics">Explore topics <span aria-hidden="true">↘</span></a>
+            <a class="button outline" href="#challenge"><span aria-hidden="true">ϟ</span> Try a quick challenge</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-frame"></div>
+          <div class="art-card">
+            <div class="art-top"><span>THE MATHS CLUB</span><span>01 / ∞</span></div>
+            <div class="art-equation"><i>3x</i> <span>+</span> 7 <span>=</span> 22</div>
+            <div class="art-bottom"><span>FIND THE MISSING NUMBER</span><span>↗</span></div>
+          </div>
+          <span class="art-sticker sticker-divide">÷</span><span class="art-sticker sticker-spark">✦</span>
+          <span class="art-sticker sticker-answer">x = ?</span><span class="art-cross">×</span>
+          <span class="art-coordinate">51° N &nbsp; / &nbsp; LET’S GO</span>
+        </div>
+      </div>
+      <div class="hero-strip">
+        <div class="wrap strip-inner">
+          <span><b aria-hidden="true">01</b> See it worked out</span>
+          <span><b aria-hidden="true">02</b> Try it with hints</span>
+          <span><b aria-hidden="true">03</b> Check your reasoning</span>
+        </div>
+      </div>
+    </section>
+    <section class="wrap topics" id="topics" aria-labelledby="topics-title">
+      <div class="section-head">
+        <div><p class="kicker">01 &nbsp; / &nbsp; THE TOPIC LAB</p><h2 id="topics-title">Pick your topic.</h2></div>
+        <p>Choose a level and dive into a short lesson. You can switch levels whenever you like.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Choose a level">
+        <button type="button" aria-pressed="true" data-level="0"><b>Year 6</b> <span>KS2</span></button>
+        <button type="button" aria-pressed="false" data-level="1"><b>Years 7–9</b> <span>KS3</span></button>
+        <button type="button" aria-pressed="false" data-level="2"><b>Early GCSE</b> <span>KS4</span></button>
+      </div>
+      <div id="topic-grid" class="topic-grid"></div>
+      <noscript><p>Enable JavaScript in your browser to open the lessons and practise.</p></noscript>
+    </section>
+    <section class="wrap challenge-wrap" id="challenge" aria-labelledby="challenge-title">
+      <div class="challenge">
+        <div>
+          <p class="kicker">02 &nbsp; / &nbsp; MIX IT UP</p>
+          <h2 id="challenge-title">The Quick 5<span>.</span></h2>
+          <p>Five questions across five topics. Take them at your own pace and see the working after each one.</p>
+          <label for="challenge-level">Challenge level</label>
+          <div class="challenge-actions">
+            <select id="challenge-level"><option value="0">Year 6</option><option value="1">Years 7–9</option><option value="2">Early GCSE</option></select>
+            <button class="button lime" id="start-challenge" type="button">Play the Quick 5 <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <div class="challenge-art" aria-hidden="true"><span>✧</span><b>05</b><span>✦</span></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-inner">
+      <p><strong>Fast &amp; Fluent with Aaryan</strong><br>Short maths lessons for ages 10–15.</p>
+      <p>Levels follow selected topics from <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study">England’s maths curriculum</a>.<br>Lesson progress is saved in this browser.</p>
+    </div>
+  </footer>
+  <dialog id="activity" aria-labelledby="activity-title">
+    <div class="dialog-shell">
+      <div class="dialog-top">
+        <p class="kicker" id="activity-label"></p>
+        <form method="dialog"><button type="submit" class="close" aria-label="Close activity">×</button></form>
+      </div>
+      <div id="activity-body"></div>
+    </div>
+  </dialog>
+</body>
+</html>

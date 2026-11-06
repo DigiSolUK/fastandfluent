@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="155" viewBox="0 0 290 155">
+  <path d="M64 17v112h152Z" fill="#dac1fa" stroke="#54278b" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M64 115h14v14" fill="none" stroke="#783ab8" stroke-width="2"/>
+  <g fill="#261332" font-family="system-ui, sans-serif" font-weight="700" font-size="16">
+    <text x="20" y="81">6 cm</text><text x="124" y="150">8 cm</text><text x="151" y="70">?</text>
+  </g>
+</svg>

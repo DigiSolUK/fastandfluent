@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="128" viewBox="0 0 290 128">
+  <path d="M81 110 163 12 209 110Z" fill="#dac1fa" stroke="#54278b" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M94 94a21 21 0 0 1 8 16m47-82a21 21 0 0 0 23 3m16 79a21 21 0 0 1 12-19" fill="none" stroke="#783ab8" stroke-width="2"/>
+  <g fill="#261332" font-family="system-ui, sans-serif" font-weight="700" font-size="16">
+    <text x="106" y="102">50°</text><text x="148" y="54">65°</text><text x="174" y="104">?</text>
+  </g>
+</svg>
